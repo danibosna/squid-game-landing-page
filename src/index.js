@@ -136,8 +136,8 @@ const animate = () => {
     ).y;
 
     sphere.rotation.x += (Math.PI * displacement.x) / (rotationSpeed.x * 20);
-    sphere.rotation.y += (Math.PI * displacement.y) / (rotationSpeed.y * 20);
-    sphere.rotation.z += (Math.PI * displacement.z) / (rotationSpeed.z * 20);
+    sphere.rotation.y += (Math.PI * displacement.x) / (rotationSpeed.y * 20);
+    sphere.rotation.z += (Math.PI * displacement.x) / (rotationSpeed.z * 20);
   }
   renderer.render(scene, camera);
 
